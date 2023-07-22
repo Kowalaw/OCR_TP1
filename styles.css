@@ -1,0 +1,22 @@
+h1, h2, p{
+    text-align: center;
+    color: orangered;
+}
+#divPrincipal{
+    background-color: orange;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+#mot{
+    background-color: #ccc;
+    padding: 15px 40%;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
