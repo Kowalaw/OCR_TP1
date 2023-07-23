@@ -45,6 +45,9 @@ function lancerNiveau(){
     return
 }
 function afficherScore(score,i){
-    console.log("Vous avez " + score + "/" + i)
+    let résultat = `${score + "/" + i}
+    `
+    let span = document.querySelector("span")
+    span.innerHTML = résultat
     return
 }

@@ -1,4 +1,4 @@
-//lancerJeu()
+lancerJeu()
 
 let repJoueur = document.getElementById("repJoueur")
 console.log(repJoueur)
