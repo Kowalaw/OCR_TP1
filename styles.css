@@ -13,7 +13,7 @@ h1, h2, p{
     align-items: center;
     border-radius: 15px;
 }
-#mot{
+#divMot{
     background-color: #ccc;
     padding: 15px 40%;
     border-radius: 15px;
