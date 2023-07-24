@@ -1,10 +1,20 @@
 let score = 0
 let i=0
-let choixNiveau = "1"
-let choixEff = 0
+let c = 0
+let listMots = listMots1
 
 function lancerJeu(){
-    //choixDuNiveau()
+    let btnRadio = document.querySelectorAll("#radioNiveau input")
+    for (c;c<btnRadio.length;c++){
+        btnRadio[c].addEventListener("change",(event)=>{
+            if(event.target.value==="1"){
+                listMots = listMots1
+            } else {
+                listMots = listMots2
+            }
+            motProposer(listMots,i)
+        })
+    }
     motProposer(listMots,i)
     let repJoueur = document.getElementById("repJoueur")
     let boutonOk = document.getElementById("boutonOk")
@@ -21,26 +31,9 @@ function lancerJeu(){
         afficherScore(score,i)
     })
 }
-
 function motProposer(listMots,i){
     let mot = document.getElementById("mot")
     mot.textContent = listMots[i]
-}
-function choixDuNiveau(){
-    while (choixEff<1){
-        //choixNiveau = prompt("choisiez le niveau 1 ou 2")
-        switch(choixNiveau){
-            case "1":
-                choixEff++
-                break
-            case "2":
-                choixEff++
-                break
-            default:
-                console.log("répondez par 1 ou 2")
-        }
-    }
-    return
 }
 function afficherScore(score,i){
     let résultat = `${score + "/" + i}

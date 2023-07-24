@@ -1,6 +1,16 @@
+html{
+    font-family: Andale Mono, monospace;
+}
 h1, h2, p{
     text-align: center;
     color: orangered;
+}
+p{
+    font-size: 18px;
+}
+#p1{
+    width: 50%;
+    margin: 0px auto 1vw;
 }
 #divPrincipal{
     background-color: orange;
@@ -12,11 +22,15 @@ h1, h2, p{
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#divPrincipal > p,#radioNiveau >p{
+    color: #fff;
 }
 #divMot{
     background-color: #ccc;
     padding: 15px 40%;
     border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 10px;
 }
