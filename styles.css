@@ -34,3 +34,43 @@ p{
     border-radius: 15px;
     margin: 5px 10px;
 }
+#popup{
+    background-color: orangered;
+    height: auto;
+    width: 25%;
+    position: absolute;
+    border-radius: 25px;
+    z-index: 6;
+}
+.off{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px 22px;
+}
+form > p, h3{
+    color: #fff;
+}
+form > input{
+    margin-top: -4px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: -4px;
+}
+#but{
+    margin-top: 2px;
+}
+#fond-popup{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 5;
+}

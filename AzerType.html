@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <script src="script/config.js" defer></script>
+    <script src="script/popup.js" defer></script>
     <script src="script/script.js" defer></script>
     <script src="script/main.js" defer></script>
 </head>
@@ -26,6 +27,18 @@
         <input id="repJoueur"><button id="boutonOk">Ok</button>
     </div>
     <p>Vous avez <span>0</span> bonne réponse.</p>
+    <p><button id="bouttonPartager">Partager</button></p>
+    <div id="popup" class="off">
+        <form>
+            <h3>Partagez votre score</h3>
+            <p>Votre nom:</p>
+            <input placeholder="nom">
+            <p>Avez qui voulez partgez votre score ?</p>
+            <input placeholder="mail">
+            <button id="but">Envoyez</button>
+        </form>
+    </div>
+    <div id="fond-popup" class="off"></div>
 </div>
 </body>
 </html>
