@@ -31,6 +31,8 @@ function lancerJeu(){
         afficherScore(score,i)
     })
     openPopup()
+    popup()
+    closePopup()
 }
 function motProposer(listMots,i){
     let mot = document.getElementById("mot")
