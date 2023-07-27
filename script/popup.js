@@ -35,7 +35,6 @@ function consoleDonnePopup(){
 function envoieMail(mail,nomJoueur,score){
     let envoieMail = `mailto:${mail.value}?subject=Score Azertype&body=Salut, je suis ${nomJoueur.value}, et j'ai réalisé ${score} sur AzerType !!!`
     location.href = envoieMail
-        console.log("error")
 }
 function nomValide(nomJoueur){
     if (nomJoueur.value.length>=2){
